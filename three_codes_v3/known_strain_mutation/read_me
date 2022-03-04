@@ -1,0 +1,50 @@
+
+(1) how to install mummer4(alignment tool), I just recommand in this way.
+a. Install Conda:
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/
+or you could use a command:
+$ pip install conda
+
+b. Install mummer4
+$ conda install -c bioconda/label/cf201901 mummer4
+
+or you could install it based on its installation readme
+https://github.com/mummer4/mummer/blob/master/INSTALL.md
+
+(2) Install python3.6 or higher
+
+(3) how to run
+
+python known_strain_mutation.py --ref ref_file --known_strain_path input_file_path --output  output_path
+
+example in my computer:
+
+python /media/saidi/Elements/Project/Project17_mixtureS_from_Xin_orginal/latest/MixtureS/Ming/known_strain_mutation/known_strain_mutation.py --ref /media/saidi/Elements/Project/Project17_mixtureS_from_Xin_orginal/latest/MixtureS/Ming/known_strain_mutation/test_data/ref/ref.fna --known_strain_path /media/saidi/Elements/Project/Project17_mixtureS_from_Xin_orginal/latest/MixtureS/Ming/known_strain_mutation/test_data/known_strains --output  /media/saidi/Elements/Project/Project17_mixtureS_from_Xin_orginal/latest/MixtureS/Ming/known_strain_mutation/test_result
+
+
+
+(4) Result
+
+It will contain all the known strain and their mutation like MixtureS result
+
+>known_strain_1
+T,30993
+A,32467
+G,55126
+G,56444
+T,91582
+G,101330
+A,104432
+T,126833
+G,129063
+A,133947
+G,134147
+T,145207
+C,145208
+C,152067
+
+
+
+
+
+
